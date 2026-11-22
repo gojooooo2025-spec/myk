@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>I'm So Sorry, Kavuuuu 🥺💖 🎀</title>
+
+  <!-- Google Fonts: Fredoka (bubbly display) + Quicksand (clean body) + Pacifico (accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="leopard-pattern-bg">
+
+  <!-- Floating Sparkles & Confetti Canvas -->
+  <canvas id="sparkle-canvas"></canvas>
+
+  <!-- Sound Toggle Button -->
+  <button id="sound-toggle" class="sound-toggle-btn" aria-label="Toggle Sound Effects">
+    🔊 Sound: ON
+  </button>
+
+  <!-- Top Y2K McBling Marquee Ribbon -->
+  <div class="y2k-marquee-container">
+    <div class="y2k-marquee">
+      <span>🎀 OFFICIAL APOLOGY PORTAL FOR KAVUUUU 🎀</span>
+      <span class="star">✦</span>
+      <span>100% SINCERE FORGIVENESS GUARANTEE</span>
+      <span class="star">✦</span>
+      <span>MCBLING Y2K SPECIAL EDITION</span>
+      <span class="star">✦</span>
+      <span>MY HEART BELONGS ONLY TO KAVUUUU 💖</span>
+      <span class="star">✦</span>
+      <span>HELLO KITTY APPROVED 🐾</span>
+      <span class="star">✦</span>
+      <span>🎀 OFFICIAL APOLOGY PORTAL FOR KAVUUUU 🎀</span>
+      <span class="star">✦</span>
+      <span>100% SINCERE FORGIVENESS GUARANTEE</span>
+      <span class="star">✦</span>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- ======================================================================
+         1. HERO SECTION: Bouncing Kitty & Apology Headline
+         ====================================================================== -->
+    <header class="hero-section">
+      <div class="hero-bow-badge">
+        <svg width="18" height="18" viewBox="0 0 100 100" fill="#ff4d94">
+          <!-- Cute Bow SVG -->
+          <circle cx="50" cy="50" r="14" fill="#ff1493" />
+          <path d="M50 50 C30 20, 10 30, 20 60 C30 80, 45 55, 50 50 Z" fill="#ff69b4" />
+          <path d="M50 50 C70 20, 90 30, 80 60 C70 80, 55 55, 50 50 Z" fill="#ff69b4" />
+          <path d="M45 58 C35 75, 20 90, 15 95 C25 90, 40 75, 48 60 Z" fill="#ff4d94" />
+          <path d="M55 58 C65 75, 80 90, 85 95 C75 90, 60 75, 52 60 Z" fill="#ff4d94" />
+        </svg>
+        <span>A Special Message For You</span>
+      </div>
+
+      <!-- Interactive Bouncing Kitty Illustration Holding a Heart -->
+      <div class="kitty-stage">
+        <!-- Floating Sparkle Accents -->
+        <svg class="sparkle-decor sparkle-1" width="24" height="24" viewBox="0 0 100 100">
+          <path d="M50 0 C50 35, 65 50, 100 50 C65 50, 50 65, 50 100 C50 65, 35 50, 0 50 C35 50, 50 35, 50 0 Z"
+            fill="#ffd700" />
+        </svg>
+        <svg class="sparkle-decor sparkle-2" width="28" height="28" viewBox="0 0 100 100">
+          <path d="M50 0 C50 35, 65 50, 100 50 C65 50, 50 65, 50 100 C50 65, 35 50, 0 50 C35 50, 50 35, 50 0 Z"
+            fill="#ff69b4" />
+        </svg>
+        <svg class="sparkle-decor sparkle-3" width="20" height="20" viewBox="0 0 100 100">
+          <path d="M50 0 C50 35, 65 50, 100 50 C65 50, 50 65, 50 100 C50 65, 35 50, 0 50 C35 50, 50 35, 50 0 Z"
+            fill="#ffffff" />
+        </svg>
+        <svg class="sparkle-decor sparkle-4" width="22" height="22" viewBox="0 0 100 100">
+          <path d="M50 0 C50 35, 65 50, 100 50 C65 50, 50 65, 50 100 C50 65, 35 50, 0 50 C35 50, 50 35, 50 0 Z"
+            fill="#ff1493" />
+        </svg>
+
+        <!-- Inline SVG: Hello Kitty Holding a Beating Heart -->
+        <svg id="hero-kitty" class="kitty-svg" viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <!-- Shadow -->
+          <ellipse cx="120" cy="208" rx="75" ry="10" fill="rgba(255, 77, 148, 0.25)" />
+
+          <!-- Body -->
+          <path d="M85 140 C75 190, 165 190, 155 140 Z" fill="#ffffff" stroke="#222222" stroke-width="4.5"
+            stroke-linecap="round" />
+          <!-- Feet -->
+          <ellipse cx="95" cy="195" rx="18" ry="12" fill="#ffffff" stroke="#222222" stroke-width="4" />
+          <ellipse cx="145" cy="195" rx="18" ry="12" fill="#ffffff" stroke="#222222" stroke-width="4" />
+
+          <!-- Head -->
+          <ellipse cx="120" cy="98" rx="82" ry="62" fill="#ffffff" stroke="#222222" stroke-width="4.5" />
+
+          <!-- Left Ear -->
+          <path d="M48 68 C42 35, 68 28, 78 52" fill="#ffffff" stroke="#222222" stroke-width="4.5"
+            stroke-linejoin="round" />
+          <!-- Right Ear -->
+          <path d="M192 68 C198 35, 172 28, 162 52" fill="#ffffff" stroke="#222222" stroke-width="4.5"
+            stroke-linejoin="round" />
+
+          <!-- Hello Kitty Signature Big Hot Pink Bow on Left Ear -->
+          <g transform="translate(68, 48) rotate(-18)">
+            <!-- Left loop -->
+            <path d="M0 0 C-28 -24, -36 12, -4 10 Z" fill="#ff1493" stroke="#222222" stroke-width="3.5" />
+            <!-- Right loop -->
+            <path d="M0 0 C28 -24, 36 12, 4 10 Z" fill="#ff1493" stroke="#222222" stroke-width="3.5" />
+            <!-- Ribbon tails -->
+            <path d="M-6 8 C-18 28, -28 32, -22 36 C-12 32, 0 14, 0 10 Z" fill="#ff4d94" stroke="#222222"
+              stroke-width="3" />
+            <path d="M6 8 C18 28, 28 32, 22 36 C12 32, 0 14, 0 10 Z" fill="#ff4d94" stroke="#222222" stroke-width="3" />
+            <!-- Center knot -->
+            <circle cx="0" cy="2" r="11" fill="#ff85c2" stroke="#222222" stroke-width="3.5" />
+            <circle cx="-2" cy="0" r="3" fill="#ffffff" />
+          </g>
+
+          <!-- Pleading Sparkly Puppy Eyes -->
+          <ellipse cx="88" cy="102" rx="7.5" ry="11" fill="#222222" />
+          <circle cx="86" cy="98" r="3.5" fill="#ffffff" />
+          <circle cx="91" cy="106" r="1.5" fill="#ffffff" />
+
+          <ellipse cx="152" cy="102" rx="7.5" ry="11" fill="#222222" />
+          <circle cx="150" cy="98" r="3.5" fill="#ffffff" />
+          <circle cx="155" cy="106" r="1.5" fill="#ffffff" />
+
+          <!-- Cute Oval Nose -->
+          <ellipse cx="120" cy="112" rx="6.5" ry="4.5" fill="#ffcc00" stroke="#222222" stroke-width="2.5" />
+
+          <!-- Rosy Cheeks -->
+          <ellipse cx="66" cy="114" rx="12" ry="7" fill="#ff85c2" opacity="0.75" />
+          <ellipse cx="174" cy="114" rx="12" ry="7" fill="#ff85c2" opacity="0.75" />
+
+          <!-- Kitty Whiskers -->
+          <!-- Left side -->
+          <line x1="38" y1="102" x2="16" y2="98" stroke="#222222" stroke-width="3.5" stroke-linecap="round" />
+          <line x1="38" y1="114" x2="14" y2="114" stroke="#222222" stroke-width="3.5" stroke-linecap="round" />
+          <line x1="38" y1="126" x2="18" y2="130" stroke="#222222" stroke-width="3.5" stroke-linecap="round" />
+          <!-- Right side -->
+          <line x1="202" y1="102" x2="224" y2="98" stroke="#222222" stroke-width="3.5" stroke-linecap="round" />
+          <line x1="202" y1="114" x2="226" y2="114" stroke="#222222" stroke-width="3.5" stroke-linecap="round" />
+          <line x1="202" y1="126" x2="222" y2="130" stroke="#222222" stroke-width="3.5" stroke-linecap="round" />
+
+          <!-- Beating Heart Held by Kitty -->
+          <g transform="translate(120, 160)">
+            <path d="M0 -15 C-25 -45, -60 -15, -40 20 C-20 45, 0 65, 0 65 C0 65, 20 45, 40 20 C60 -15, 25 -45, 0 -15 Z"
+              fill="url(#heartGrad)" stroke="#222222" stroke-width="4" />
+            <!-- Heart highlight -->
+            <path d="M-22 -15 C-32 -8, -35 8, -28 15" stroke="#ffffff" stroke-width="3" stroke-linecap="round"
+              fill="none" />
+            <text x="0" y="22" font-family="'Fredoka', sans-serif" font-weight="700" font-size="16" fill="#ffffff"
+              text-anchor="middle" letter-spacing="0.5">Kavuuuu 💖</text>
+          </g>
+
+          <!-- Little Paws Hugging the Heart -->
+          <ellipse cx="86" cy="158" rx="14" ry="11" fill="#ffffff" stroke="#222222" stroke-width="3.5"
+            transform="rotate(25, 86, 158)" />
+          <ellipse cx="154" cy="158" rx="14" ry="11" fill="#ffffff" stroke="#222222" stroke-width="3.5"
+            transform="rotate(-25, 154, 158)" />
+
+          <!-- Gradients -->
+          <defs>
+            <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ff69b4" />
+              <stop offset="100%" stop-color="#e60067" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Headline & Subtitle -->
+      <h1 class="hero-title">
+        I'm So Sorry, <span class="kavuu-name">Kavuuuu</span> 🥺💖
+      </h1>
+      <h5 class="hero-subtitle">
+        I messed up, and seeing you upset breaks my whole heart. You are my absolute favorite human, so I made this
+        whole portal just to ask for your sweet forgiveness... 🎀
+      </h5>
+    </header>
+
+    <!-- ======================================================================
+         2. THE APOLOGY LETTER CARD: Unfolding Envelope
+         ====================================================================== -->
+    <section class="letter-section">
+      <div class="leopard-card-wrap">
+
+        <!-- Closed Envelope View -->
+        <div id="envelope-closed" class="envelope-closed-view">
+          <div id="wax-seal" class="wax-seal-button" title="Click to open the letter">
+            <svg class="wax-seal-bow" viewBox="0 0 100 100" fill="#ffffff">
+              <circle cx="50" cy="50" r="14" fill="#ffffff" />
+              <path d="M50 50 C30 20, 10 30, 20 60 C30 80, 45 55, 50 50 Z" fill="#ffffff" />
+              <path d="M50 50 C70 20, 90 30, 80 60 C70 80, 55 55, 50 50 Z" fill="#ffffff" />
+              <path d="M45 58 C35 75, 20 90, 15 95 C25 90, 40 75, 48 60 Z" fill="#ffffff" />
+              <path d="M55 58 C65 75, 80 90, 85 95 C75 90, 60 75, 52 60 Z" fill="#ffffff" />
+            </svg>
+          </div>
+          <div class="tap-to-open-prompt">
+            Tap to open Kavuuuu's letter 💌
+          </div>
+          <p class="envelope-subtext">Sealed with a pink bow and 100% unconditional love</p>
+        </div>
+
+        <!-- Unfolded Letter View -->
+        <article id="letter-open" class="letter-open-view">
+          <div class="letter-header-decor">
+            <span class="letter-date">📅 FOR TODAY & ALWAYS</span>
+            <div class="letter-actions">
+              <button id="btn-edit-letter" class="letter-btn-mini" title="Edit this letter text">✏️ Edit Letter</button>
+              <button id="btn-refold-letter" class="letter-btn-mini" title="Fold back into envelope">✉️ Refold</button>
+            </div>
+          </div>
+
+          <h2 class="letter-greeting">My dearest Kavuuuu 🎀,</h2>
+
+          <div id="editable-letter-body" class="letter-content">
+            <h5>
+              I want to start by saying I am <strong>so genuinely, completely sorry</strong>.
+              The very last thing in this world I ever want to do is hurt your feelings or put a frown on your gorgeous
+              face.
+            </h5>
+            <h5>
+              You are my sunshine, my safe
+              place, and the most radiant girl in the universe. I hate that I was careless, and I want you to know that
+              I take full responsibility.
+            </h5>
+            <h5>
+              I promise to listen better, cherish you deeper, and shower you with all the care and adoration you truly
+              deserve. I don't ever want to take your warmth for granted. You mean the entire world to me, Kavuuuu.
+            </h5>
+            <h5>
+              Please let me make it up to you today —
+              I loveeeeeeeeeeeeeeeeeeeeeeeeeeee you more than words can say.
+              🥺💕
+            </h5>
+          </div>
+
+          <div class="letter-signoff">
+            <div class="signature-block">
+              <div>Forever & always yours,</div>
+              <div class="signature-sub">The boy who loves you endlessly 💕</div>
+            </div>
+            <div class="letter-stamp-mini">
+              🐾 <em>Hand-delivered with kisses</em>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. "REASONS WHY I ADORE KAVUUUU" 3D Flip Cards
+         ====================================================================== -->
+    <section class="reasons-section">
+      <div class="reasons-header-box">
+        <h2 class="section-title">
+          <span>Reasons Why I Adore Kavuuuu</span>
+          <span>🎀✨</span>
+        </h2>
+        <h5 class="section-subtitle">Tap each leopard card to reveal why you're so unforgettable...</h5>
+      </div>
+
+      <div class="reasons-grid">
+
+        <!-- Card 1 -->
+        <div class="flip-card" tabindex="0" role="button" aria-label="Reason 1 flip card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="front-icon-wrap">✨</div>
+              <div class="front-badge">Reason #1 🐾</div>
+              <span class="tap-hint-pill">TAP TO REVEAL</span>
+            </div>
+            <div class="flip-card-back">
+              <span class="card-back-number">REASON NO. 01</span>
+              <h3 class="card-back-title">Your Radiant Smile 😊</h3>
+              <p class="card-back-text">
+                Your laugh is literally my favorite sound in existence. Whenever you smile, every worry melts away
+                instantly.
+              </p>
+              <div class="card-back-heart">💖</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flip-card" tabindex="0" role="button" aria-label="Reason 2 flip card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="front-icon-wrap">🌸</div>
+              <div class="front-badge">Reason #2 🎀</div>
+              <span class="tap-hint-pill">TAP TO REVEAL</span>
+            </div>
+            <div class="flip-card-back">
+              <span class="card-back-number">REASON NO. 02</span>
+              <h3 class="card-back-title">Your Sweet Heart 💗</h3>
+              <p class="card-back-text">
+                The way you care about people, your gentleness, and the pure warmth you bring into my life makes you so
+                precious.
+              </p>
+              <div class="card-back-heart">🌸</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flip-card" tabindex="0" role="button" aria-label="Reason 3 flip card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="front-icon-wrap">👑</div>
+              <div class="front-badge">Reason #3 🍓</div>
+              <span class="tap-hint-pill">TAP TO REVEAL</span>
+            </div>
+            <div class="flip-card-back">
+              <span class="card-back-number">REASON NO. 03</span>
+              <h3 class="card-back-title">Simply Being YOU ✨</h3>
+              <p class="card-back-text">
+                You are cute, funny, brilliant, and stunning all at once. There is nobody on earth like you, my sweetest
+                Kavuuuu!
+              </p>
+              <div class="card-back-heart">👑</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. THE INTERACTIVE FORGIVENESS QUESTION
+         ====================================================================== -->
+    <section class="question-section">
+      <div class="question-card">
+        <h2 class="question-title">Kavuuuu, do you forgive me? 🥺👉👈</h2>
+        <p class="question-subtitle">
+          Be honest, but please remember how much I adore you and how good my cuddles are!
+        </p>
+
+        <!-- Button Arena -->
+        <div class="buttons-container">
+          <button id="btn-yes" class="btn-yes">
+            <span>Yes, I forgive you! 💖</span>
+          </button>
+
+          <button id="btn-no" class="btn-no">
+            <span>No 😤</span>
+          </button>
+        </div>
+
+        <!-- Playful Dodge Alert Message -->
+        <div id="dodge-counter" class="dodge-counter-banner">
+          Kavuuuu tried to say no <strong>0</strong> times... but the Yes button is waiting for you! 💖
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. COUPLE AVATAR POLAROID CARD AT THE END
+         ====================================================================== -->
+    <section class="couple-avatar-section">
+      <div class="polaroid-card">
+        <div class="polaroid-tape">🎀 US FOREVER 🎀</div>
+        <div class="polaroid-img-wrapper">
+          <img src="couple-avatar.jpg" alt="Kavuuuu and Me" class="polaroid-img" loading="lazy">
+        </div>
+        <div class="polaroid-caption">
+          <h4 class="polaroid-title">You & Me Against The World 💖</h4>
+          <h5 class="polaroid-subtitle">Best team ever, no matter what! 🥺🐾</h5>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ======================================================================
+       5. CELEBRATION MODAL & VIP COUPON SCREEN
+       ====================================================================== -->
+  <div id="celebration-modal" class="celebration-overlay" role="dialog" aria-modal="true" aria-labelledby="celeb-title">
+    <div class="celebration-modal">
+
+      <div class="celebration-badge-top">
+        <span>🎉 OFFICIAL RECONCILIATION 🎉</span>
+      </div>
+
+      <!-- Celebratory Dancing Kitty SVG -->
+      <div class="happy-kitty-wrap">
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <!-- Body -->
+          <path d="M85 140 C75 190, 165 190, 155 140 Z" fill="#ffffff" stroke="#222222" stroke-width="4.5" />
+          <!-- Feet -->
+          <ellipse cx="95" cy="195" rx="18" ry="12" fill="#ffffff" stroke="#222222" stroke-width="4" />
+          <ellipse cx="145" cy="195" rx="18" ry="12" fill="#ffffff" stroke="#222222" stroke-width="4" />
+          <!-- Head -->
+          <ellipse cx="120" cy="98" rx="82" ry="62" fill="#ffffff" stroke="#222222" stroke-width="4.5" />
+          <!-- Ears -->
+          <path d="M48 68 C42 35, 68 28, 78 52" fill="#ffffff" stroke="#222222" stroke-width="4.5" />
+          <path d="M192 68 C198 35, 172 28, 162 52" fill="#ffffff" stroke="#222222" stroke-width="4.5" />
+          <!-- Big Party Bow -->
+          <g transform="translate(68, 48) rotate(-18)">
+            <path d="M0 0 C-28 -24, -36 12, -4 10 Z" fill="#ff1493" stroke="#222222" stroke-width="3.5" />
+            <path d="M0 0 C28 -24, 36 12, 4 10 Z" fill="#ff1493" stroke="#222222" stroke-width="3.5" />
+            <circle cx="0" cy="2" r="11" fill="#ffd700" stroke="#222222" stroke-width="3.5" />
+          </g>
+          <!-- Happy Squinting Smiling Eyes (Happy Arc) -->
+          <path d="M80 102 Q88 92 96 102" stroke="#222222" stroke-width="5" stroke-linecap="round" fill="none" />
+          <path d="M144 102 Q152 92 160 102" stroke="#222222" stroke-width="5" stroke-linecap="round" fill="none" />
+          <!-- Nose -->
+          <ellipse cx="120" cy="110" rx="6.5" ry="4.5" fill="#ffcc00" stroke="#222222" stroke-width="2.5" />
+          <!-- Big Cute Smile -->
+          <path d="M114 118 Q120 125 126 118" stroke="#222222" stroke-width="3" stroke-linecap="round" fill="none" />
+          <!-- Deep Blushing Cheeks -->
+          <ellipse cx="66" cy="114" rx="14" ry="8" fill="#ff1493" opacity="0.85" />
+          <ellipse cx="174" cy="114" rx="14" ry="8" fill="#ff1493" opacity="0.85" />
+          <!-- Whiskers -->
+          <line x1="38" y1="102" x2="16" y2="98" stroke="#222222" stroke-width="3.5" stroke-linecap="round" />
+          <line x1="38" y1="114" x2="14" y2="114" stroke="#222222" stroke-width="3.5" stroke-linecap="round" />
+          <line x1="202" y1="102" x2="224" y2="98" stroke="#222222" stroke-width="3.5" stroke-linecap="round" />
+          <line x1="202" y1="114" x2="226" y2="114" stroke="#222222" stroke-width="3.5" stroke-linecap="round" />
+          <!-- Arms in the air cheering -->
+          <ellipse cx="70" cy="130" rx="12" ry="16" fill="#ffffff" stroke="#222222" stroke-width="3.5"
+            transform="rotate(-35, 70, 130)" />
+          <ellipse cx="170" cy="130" rx="12" ry="16" fill="#ffffff" stroke="#222222" stroke-width="3.5"
+            transform="rotate(35, 170, 130)" />
+        </svg>
+      </div>
+
+      <h2 id="celeb-title" class="celebration-title">
+        Yay! Kavuuuu forgave me!! 🎉💖
+      </h2>
+      <p class="celebration-subtitle">
+        You just made me the happiest guy ever! Here is your official VIP redemption coupon:
+      </p>
+
+      <!-- VIP Digital Coupon Pass (Y2K McBling Ticket) -->
+      <div id="vip-coupon-ticket" class="vip-ticket">
+
+        <div class="ticket-header">
+          <div class="ticket-title">
+            <span>🎀 VIP COUPON FOR KAVUUUU 🎀</span>
+          </div>
+          <span class="ticket-no">#KAVU-2024-LOVE</span>
+        </div>
+
+        <div class="ticket-grid">
+          <div class="ticket-field">
+            <span class="ticket-label">Issued To</span>
+            <span class="ticket-value highlight">Kavuuuu 👑</span>
+          </div>
+          <div class="ticket-field">
+            <span class="ticket-label">Issued By</span>
+            <span class="ticket-value">Your Boyfriend 💕</span>
+          </div>
+          <div class="ticket-field-full ticket-field">
+            <span class="ticket-label">Redeemable For</span>
+            <span class="ticket-value highlight">
+              1 Free Dream Date 🍽️ + Favorite Treats & Desserts 🍰 + Unlimited Hugs, Cuddles & Kisses 🧸
+            </span>
+          </div>
+          <div class="ticket-field">
+            <span class="ticket-label">Validity</span>
+            <span class="ticket-value">Lifetime / Forever ♾️</span>
+          </div>
+          <div class="ticket-field">
+            <span class="ticket-label">Terms</span>
+            <span class="ticket-value">No Expiration Date • Non-Transferable</span>
+          </div>
+        </div>
+
+        <div class="ticket-barcode-row">
+          <!-- Cute SVG Barcode -->
+          <svg class="ticket-barcode" viewBox="0 0 200 40" fill="#222222">
+            <rect x="0" y="0" width="3" height="40" />
+            <rect x="6" y="0" width="2" height="40" />
+            <rect x="12" y="0" width="5" height="40" />
+            <rect x="20" y="0" width="2" height="40" />
+            <rect x="25" y="0" width="4" height="40" />
+            <rect x="33" y="0" width="6" height="40" />
+            <rect x="42" y="0" width="2" height="40" />
+            <rect x="48" y="0" width="5" height="40" />
+            <rect x="56" y="0" width="3" height="40" />
+            <rect x="63" y="0" width="7" height="40" />
+            <rect x="73" y="0" width="2" height="40" />
+            <rect x="78" y="0" width="4" height="40" />
+            <rect x="85" y="0" width="6" height="40" />
+            <rect x="94" y="0" width="3" height="40" />
+            <rect x="100" y="0" width="5" height="40" />
+            <rect x="108" y="0" width="2" height="40" />
+            <rect x="114" y="0" width="7" height="40" />
+            <rect x="124" y="0" width="3" height="40" />
+            <rect x="130" y="0" width="5" height="40" />
+            <rect x="138" y="0" width="2" height="40" />
+            <rect x="144" y="0" width="6" height="40" />
+            <rect x="153" y="0" width="3" height="40" />
+            <rect x="160" y="0" width="5" height="40" />
+            <rect x="168" y="0" width="4" height="40" />
+            <rect x="176" y="0" width="6" height="40" />
+            <rect x="185" y="0" width="2" height="40" />
+            <rect x="190" y="0" width="5" height="40" />
+          </svg>
+          <div class="ticket-stamp">100% GENUINE LOVE</div>
+        </div>
+
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="modal-actions">
+        <button id="btn-screenshot" class="btn-modal btn-screenshot">
+          📸 Screenshot Coupon
+        </button>
+        <button id="btn-send-whatsapp" class="btn-modal"
+          style="background:#25D366; color:#fff; border:2px solid #128C7E;">
+          💬 Send on WhatsApp
+        </button>
+        <button id="btn-close-modal" class="btn-modal btn-close-modal">
+          💖 View Page Again
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
